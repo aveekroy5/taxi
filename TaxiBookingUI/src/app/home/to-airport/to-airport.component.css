@@ -1,0 +1,20 @@
+.sub-header{
+    color: #ffc000;
+    font-size: 18px;
+}
+
+.booking-section{
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.booking-section:hover{
+    border: 1px solid #ffc000;
+}
+
+.booking-section h1{
+    text-align: center;
+}

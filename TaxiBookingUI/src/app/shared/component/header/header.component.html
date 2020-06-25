@@ -1,0 +1,86 @@
+<div class="header" [ngStyle]="homeHeader?{'height.px': '780'} : {'height.px': '180'}">
+    <div class="container">
+      <div class="info-container col-12 row  p-0">
+        <div class="contact-container col-7">
+            <span><i class="fa fa-phone"></i> 7090879867</span>
+            <span><i class="fa fa-mobile-phone"></i> 7090879867</span>
+            <span><i class="fa fa-envelope"></i> test@test.com</span>
+        </div>
+        <div class="social-media-container col-5">
+          <i class="fa fa-facebook-square"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-google-plus"></i>
+          <i class="fa fa-youtube"></i>
+          <i class="fa fa-linkedin"></i>
+          <i class="fa fa-skype"></i>
+        </div>
+      </div>
+      <div class="logo"><a routerLink="/home"><img src="../../../../assets/images/Group 1.png"/></a></div>
+      <div class="menu">
+          <ul>
+            <li><a routerLink="/book" routerLinkActive="active">TAXI BOEKEN</a></li>
+            <li><a routerLink="/rate" routerLinkActive="active">BELLEN</a></li>
+            <li><a routerLink="/airport" routerLinkActive="active">AIRPORT TAXI</a></li>
+            <li><a routerLink="/testimonial" routerLinkActive="active">WAT ANDEREN ZEGGEN</a></li>
+            <li><a routerLink="/advantage" routerLinkActive="active">UW VOORDEEL</a></li>
+            <li><a routerLink="/contactus" routerLinkActive="active">CONTACT</a></li>
+          </ul>
+      </div>
+      <div class="booking-form-container col-12 col-md-7" *ngIf="homeHeader">
+        <mat-tab-group mat-stretch-tabs>
+          <mat-tab label="Snel boeken">
+            <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+            <div class="col-12 row booking-form">
+              
+                <p class="pl-3">Hier maakt u een reservering voor een standaard rit van adres n</p>
+                <div class="form-group col-12 col-md-6">
+                  <label >Naam(*)</label>
+                  <input type="text" class="form-control"  formControlName="bookingname" placeholder="Enter Your Name" required >
+                  
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <label>E-mail(*)</label>
+                  <input type="text" class="form-control" formControlName="bookingemail"placeholder="Enter email" required >
+                  
+                </div>
+                <p class="pl-3">geef een mobiel telefoon nummer , dat op de dag van uw aanvraag</p>
+                <div class="form-group col-12 col-md-6">
+                  <label >Mobile Nummer(*)</label>
+                  <input type="text" class="form-control" formControlName="bookingphone" placeholder="Enter Phone No" required >
+                  
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <label>Extra Mobiel Nummer</label>
+                  <input type="text" class="form-control" formControlName="bookingephone" placeholder="Enter Phone No">
+                  
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <label>Geef Rit Datum Plus Ophaal Tijd Op(*)</label>
+                  <input type="datetime-local" class="form-control" formControlName="bookingDate" required >
+                  
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <button type="submit" class="book-now">Verzend aan Taxi Boeking Den Haag</button>
+                </div>
+              
+              </div>
+            </form>
+          </mat-tab>
+          <!-- <mat-tab label="RIT GEGEVENS"> Content 2 </mat-tab> -->
+        </mat-tab-group>
+      </div>
+    </div>
+
+    <!-- <div class="header-border col-12 p-0">
+      <img class=" col-12 p-0" src="../../../../assets/images/Layer 11.png"/>
+    </div> -->
+  </div>
+  <div class="header-border col-12 p-0">
+    <img class=" col-12 p-0" src="../../../../assets/images/Layer 11.png"/>
+  </div>
+  <!-- <li><a routerLink="/" routerLinkActive="active">home</a></li>
+    <li><a routerLink="/book" routerLinkActive="active">Book a Taxi</a></li>
+    <li><a routerLink="/rate" routerLinkActive="active">Rate Chart</a></li>
+    <li><a routerLink="/testimonial" routerLinkActive="active">Testimonial</a></li>
+    <li><a routerLink="/aboutus" routerLinkActive="active">About Us</a></li>
+    <li><a routerLink="/contactus" routerLinkActive="active">Contact US</a></li> -->

@@ -1,0 +1,117 @@
+/* header
+
+.header{
+    background-image: url("../../../assets/images/Clip.png");  
+    height: 180px;
+    background-position: bottom;
+}
+
+.info-container{
+    height: 70px;
+    width: 800px;
+    background-color:#000000;
+    float: right;
+    border-bottom-left-radius: 14px;
+}
+
+.info-container:before{
+    content: "";
+    width: 40px;
+    border-top: 60px solid black;
+    border-left: 40px solid transparent;
+    margin-left: -40px;
+}
+
+.contact-container {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.social-media-container{
+    height: 70px;
+    width: 300px;
+    background-color: #FFC000;
+    float: right;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.social-media-container:before{
+    content: "";
+    width: 40px;
+    border-bottom: 70px solid black;
+    border-right: 40px solid transparent;
+    margin-left: -30px;
+}
+
+.logo img{
+    margin-top: 40px;
+}
+
+.menu ul{
+    color: #FFFFFF;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    margin-right: -15px;
+    margin-top: -15px;
+}
+.menu ul li{
+    padding: 0 5px;
+} */
+
+
+/* Footer
+.footer{
+    background-color: #191919;
+}
+
+.footer-container{
+    padding: 36px 0;
+    color: #FFFFFF;
+}
+.Section-1{
+    text-align: center;
+}
+.Section-2 ul{
+    list-style: none;
+}
+.Section-2 ul li::before{
+    content: "♦";
+    color: #FFC000;
+    font-weight: bold;
+    display: inline-block; 
+    width: 2em;
+    margin-left: -2em;
+}
+.legal{
+    color: #FFC000; 
+}
+.profile{
+    width: 45px;
+    right: 0;
+    position: fixed;
+    bottom: 50px;
+    background-color: #ffc000;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.profile i{
+    font-size: 25px;
+} */
+.route-car{
+    position: absolute;
+    left: -300px;
+    top: 100px;  
+}
+.route-car img{
+    width:300px;
+}
